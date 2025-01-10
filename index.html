@@ -1,13 +1,218 @@
-hello wolrd
-pandurangaswamy 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            font-family: monospace;
+            font-size: 20px;
+        }
+        body{
+            margin:0px;
+            background-color: #f0f8ff;
+        }
+        header{
+            height: 100vh;
+            background-color :#2195f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .pandu{
+            background-color:#2195f3 ;
+            height: 30px;
+            width: 80px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .pandu:hover{
+            color:rgba(255, 0, 0, 0.676);
+            background-color: rgba(0, 255, 255, 0.742);
+            
+        }
+        h1{
+            color:#2195f3 ;
+            font-size:50px;
+        }
+        .h{
+            color: #f0f8ff;
+            text-align: center;
+            font-size: 80px;
+        }
+        main{
+            padding: 20px;
+        }
+        section{
+            height: 100vh;
+            border: 1px solid grey;
+            border-radius: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            height: 40px;
+            color: #f0f8ff;
+            background-color: black;
+            text-align: center;
+        }
+        .top{
+          
+            background-color: #2195f3;
+            color: white;
+            height: 70px;
+            width: 70px;
+            border: none;
+            border-radius: 100%;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+           
+
+
+
+        }
+        
+        
+     
+
+
+            
+        
+        
+        .button{
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 10px;
+            margin:50px ;
+            cursor: pointer;
+
+        }
+        .button:hover{
+            color:rgba(255, 0, 0, 0.676);
+            background-color: rgba(0, 255, 255, 0.742);
+        }
+      
+        
+    </style>
 </head>
 <body>
-    <h1>hello pandu</h1>
+    <header>
+        <h1 class="h">welcome to my portfolio</h1>
+        <div>
+            <a href="#about"><button class="button">about</button></a>
+            <a href="#skill"><button class="button">skills</button></a>
+            <a href="#project"><button class="button">project</button></a>
+            <a href="#contact"><button class="button">contact</button></a>
+        </div>    
+    </header>
+    <main>
+        <section id="about">
+            <h1>about</h1>
+            <p>my name is panduranga swamy g  and now i am study in 1st year of E and C engineering in <br><b>UBDT</b> college of davanagere 
+            and i am faciniated in coding and sports also and i will  build <br>new company in feuture</p>
+        </section>
+        <section id="skill">
+            <h1>skills</h1>
+            <ul>
+                <li>
+                    full stack
+                </li>
+                <li>
+                    basi python
+                </li>
+                <li>
+                    python DSA
+                </li>
+                <li>
+                    mechine learning 
+                </li>
+            </ul>
+        </section>
+        <section id="project">
+            <h1>project</h1>
+            <table border = "2">
+                <tr>
+                    <th>
+                        no
+                    </th>
+                    <th>
+                        projects
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                         build simple calculator
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        create new web page about the me
+
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            <form >
+               <h1>contact</h1>
+               <label for="name">Name :</label>
+               <input type="text" id="name" placeholder="please enter the name" required>
+               <br>
+               <br>
+               <label for="email">Number :</label>
+               <input type="number" id="email" placeholder="please the enter the number"required>
+               <br>
+               <br>
+               <label for="number">Email :</label>
+               <input type="email" id="number" placeholder="please enter the email" required>
+               <br>
+               <br>
+               <label for="pass">Password</label>
+               <input type="password" id="pass" placeholder="please the enter password" required>
+               <br>
+               <br>
+               <b>gender :</b>
+               <label for="male">Male</label>
+               <input type="checkbox" id="male">
+               <label for="female">female</label>
+               <input type="checkbox" id="female">
+               <br>
+               <br>
+               <span >Address :</span>
+               <select>
+                  <option value="">nittuvalli 60 feet ring road davanagere</option>
+                  <option value="">KTJ nagara 12 main 1 circle davanagere</option>
+                  <option value="">SS leyout</option>
+               </select>
+               <br>
+               <br>
+               <button class="pandu">submit</button>
+               <button class="pandu">reset</button>
+            </form>
+
+
+
+        </section>
+        
+    </main>
+    <a href=""> <button class="top">top</button> </a>
+    <footer>
+        thank you for visiting  my website
+   
+    </footer>
+
 </body>
 </html>
